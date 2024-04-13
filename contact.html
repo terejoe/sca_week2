@@ -20,21 +20,51 @@
 
         <main>
             <form action="#" method="post">
-                <div>
+                <fieldset>
+                    <legend>Personal Information</legend>
                     <div>
                         <label for="name">Name</label>
-                        <input type = "name" id = "name" placeholder="Enter your name">
+                        <input type = "name" id = "name" name="name" required>
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type = "email" id = "email" placeholder="Enter email address">
+                        <input type = "email" id = "email" name="email" required>
                     </div>
                     <div>
-                        <label for="text">Message</label>
-                        <textarea id="message" rows="4" cols="50"></textarea>
+                        <label for="age">Age</label>
+                        <input type = "number" id = "age" name="age" min="18" max="60" required>
                     </div>
-        
-                </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Track</legend>
+                    <div>
+                        <input type="radio" id="interest1" name="option">
+                        <label for="interest1">Frontend Development</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="interest2" name="option">
+                        <label for="interest2">Backend Development</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="interest3" name="option">
+                        <label for="interest3">Project Management</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="interest4" name="option">
+                        <label for="interest4">Product Designer</label>
+                    </div>
+                   
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message</legend>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4"></textarea>
+                    </div>
+                </fieldset>
+                
                 <button type="submit">Submit</button>
             </form>
             
